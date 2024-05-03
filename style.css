@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles */
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 25px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 1rem 0 1rem;
+    }
+
+    .container-1,
+    .about-us,
+    .container-2,
+    .box {
+        padding: 5%;
+    }
+
+    .main-user-info,
+    .user-input-box,
+    .box form .loginBox {
+        width: 100%;
+    }
+
+    .home-text {
+        padding-top: 150px;
+    }
+
+    .service-content .main {
+        width: 100%;
+    }
+
+    .service-logo {
+        width: 100px;
+        height: 100px;
+        margin: -60px auto 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 1rem 0 1rem;
+    }
+
+    .container-1,
+    .about-us,
+    .container-2,
+    .box {
+        padding: 5%;
+    }
+
+    .main-user-info,
+    .user-input-box,
+    .box form .loginBox {
+        width: 100%;
+    }
+
+    .home-text {
+        padding-top: 100px;
+    }
+
+    .service-content .main {
+        width: 100%;
+    }
+
+    .service-logo {
+        width: 80px;
+        height: 80px;
+        margin: -50px auto 0;
+    }
+}

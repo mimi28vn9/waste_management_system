@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive styles for aside */
+aside {
+    background: rgb(28, 211, 211);
+    width: 100%; /* Adjusted for responsiveness */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+aside ul li {
+    padding: 20px 25px 5px;
+    list-style: none;
+}
+
+aside ul li a {
+    text-decoration: none;
+}
+
+aside .bx {
+    font-size: 30px !important;
+    color: black !important;
+}
+
+aside .icon-text {
+    color: #FFF;
+    font-size: 15px;
+}
+
+aside .logout-1,
+aside .logout-2 {
+    margin-top: 50%;
+}
+
+/* Responsive styles for content */
+.content {
+    width: 100%;
+    padding-left: 0; /* Adjusted for responsiveness */
+    position: relative;
+}
+
+/* Responsive styles for cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Adjusted for responsiveness */
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cards-container .box {
+    flex: 1 1 calc(33.333% - 2rem); /* Adjusted for responsiveness */
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem; /* Added for responsiveness */
+}
+
+/* Responsive styles for request form */
+.request-form {
+    display: flex;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center;
+}
+
+.box-2 {
+    width: 100%; /* Adjusted for responsiveness */
+    margin: 2rem 0; /* Adjusted for responsiveness */
+}
+
+.box-2 form {
+    width: 100%; /* Adjusted for responsiveness */
+    padding: 2rem; /* Adjusted for responsiveness */
+}
+
+/* Responsive styles for search box */
+.search-box {
+    left: 10%; /* Adjusted for responsiveness */
+    width: 80%; /* Adjusted for responsiveness */
+    background: darkgrey;
+    border-radius: 10px;
+    clip-path: circle(0% at 100% 0%);
+    position: relative;
+}
+
+/* Add your media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for screens up to 768px width */
+    .content {
+        width: 100%;
+        left: 0;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .cards-container .box {
+        flex: 1 1 calc(50% - 2rem);
+    }
+
+    .search-box {
+        left: 5%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust styles for screens up to 480px width */
+    .cards-container .box {
+        flex: 1 1 calc(100% - 2rem);
+    }
+}
